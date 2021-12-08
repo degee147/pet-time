@@ -175,7 +175,7 @@ class S {
   /// `Enter your details information`
   String get SignUpMsg {
     return Intl.message(
-      'Enter your details information',
+      'Enter your details',
       name: 'SignUpMsg',
       desc: '',
       args: [],
@@ -332,10 +332,10 @@ class S {
     );
   }
 
-  /// `Set your Password?`
+  /// `Reset your Password?`
   String get setYourPassword {
     return Intl.message(
-      'Set your Password?',
+      'Reset your Password?',
       name: 'setYourPassword',
       desc: '',
       args: [],

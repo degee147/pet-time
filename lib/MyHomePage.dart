@@ -118,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               color: Colors.transparent,
               image: DecorationImage(
                 image: ExactAssetImage(
-                    Constants.assetsImagePath + "background.jpg"),
+                    Constants.assetsImagePath + "selectionbg.png"),
                 // Constants.assetsImagePath + "logo_app.jpg"),
                 fit: BoxFit.cover,
               ),

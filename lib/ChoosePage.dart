@@ -24,11 +24,11 @@ class _ChoosePage extends State<ChoosePage> {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.transparent,
+                  color: Colors.black12,
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: ExactAssetImage(
-                        Constants.assetsImagePath + "background.jpg"),
+                        Constants.assetsImagePath + "selectionbg.png"),
                   ),
                 ),
               ),

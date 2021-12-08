@@ -23,7 +23,7 @@
   "SignInMsg": "To Continue, first verify that it's you.",
   "signYouIn": "Let's Sign You In",
   "forgotPassword": "Forgot password?",
-  "setYourPassword": "Set your Password?",
+  "setYourPassword": "Reset your Password?",
   "passwordDesc": "Please enter your email address.You will receive a link to create a new password via email.",
   "send": "Send",
   "donHaveAnAccount": "Don't have an Account?",

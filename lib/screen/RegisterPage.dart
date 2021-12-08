@@ -23,7 +23,7 @@ class _RegisterPage extends State<RegisterPage> {
     return new Future.value(false);
   }
 
-  String countryCode = "IN";
+  String countryCode = "ES";
   String mobileNumber;
   final myController = TextEditingController();
 
@@ -54,9 +54,6 @@ class _RegisterPage extends State<RegisterPage> {
             child: ListView(
               children: [
                 Container(
-                    margin: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height * 0.05,
-                    ),
                     child: getCustomText(S.of(context).createAnAccount,
                         textColor, 1, TextAlign.start, FontWeight.bold, 25)),
                 Container(
@@ -75,13 +72,8 @@ class _RegisterPage extends State<RegisterPage> {
                   padding: EdgeInsets.only(top: 20, bottom: 10),
                   child: Align(
                       alignment: Alignment.topLeft,
-                      child: getCustomText(
-                          S.of(context).emailAddress,
-                          textColor,
-                          1,
-                          TextAlign.start,
-                          FontWeight.bold,
-                          14)),
+                      child: getCustomText(S.of(context).emailAddress,
+                          textColor, 1, TextAlign.start, FontWeight.bold, 14)),
                 ),
                 Container(
                   margin: EdgeInsets.only(bottom: 10),
@@ -170,6 +162,13 @@ class _RegisterPage extends State<RegisterPage> {
                 //       )),
                 // ),
                 Padding(
+                  padding: EdgeInsets.only(bottom: 0),
+                  child: Align(
+                      alignment: Alignment.topLeft,
+                      child: getCustomText(S.of(context).phoneNumber, textColor, 1,
+                          TextAlign.start, FontWeight.bold, 14)),
+                ),
+                Padding(
                   padding: EdgeInsets.only(bottom: 10),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
@@ -179,10 +178,7 @@ class _RegisterPage extends State<RegisterPage> {
                         padding: EdgeInsets.symmetric(horizontal: 5),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(8)),
-                            border: Border.all(
-                              color: textColor,
-                              width: 0.3
-                            ),
+                            border: Border.all(color: textColor, width: 0.3),
                             color: ConstantColors.bgColor),
                         child: CountryCodePicker(
                           onChanged: (value) {
@@ -190,7 +186,7 @@ class _RegisterPage extends State<RegisterPage> {
                             print("changeval===$countryCode");
                           },
                           // Initial selection and favorite can be one of code ('IT') OR dial_code('+39')
-                          initialSelection: 'IN',
+                          initialSelection: 'ES',
                           textStyle: TextStyle(
                               color: textColor,
                               fontFamily: Constants.fontsFamily),
@@ -201,8 +197,7 @@ class _RegisterPage extends State<RegisterPage> {
                           //Get the country information relevant to the initial selection
                           onInit: (code) {
                             countryCode = code.dialCode;
-                            print(
-                                "on init ${code.name} ${code.dialCode} ${code.name}");
+                            print("on init ${code.name} ${code.dialCode} ${code.name}");
                           },
                         ),
                       ),
@@ -229,25 +224,28 @@ class _RegisterPage extends State<RegisterPage> {
                                 print("resge$e");
                               }
                             },
-                            decoration:InputDecoration(
-                              contentPadding: EdgeInsets.only(top: 3, left: 8),
-                              enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: textColor, width: 0.3),
-                                borderRadius: const BorderRadius.all(
-                                  const Radius.circular(8),
+                            decoration: InputDecoration(
+                                contentPadding:
+                                    EdgeInsets.only(top: 3, left: 8),
+                                enabledBorder: OutlineInputBorder(
+                                  borderSide:
+                                      BorderSide(color: textColor, width: 0.3),
+                                  borderRadius: const BorderRadius.all(
+                                    const Radius.circular(8),
+                                  ),
                                 ),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: textColor, width: 0.3),
-                                borderRadius: const BorderRadius.all(
-                                  const Radius.circular(15),
+                                focusedBorder: OutlineInputBorder(
+                                  borderSide:
+                                      BorderSide(color: textColor, width: 0.3),
+                                  borderRadius: const BorderRadius.all(
+                                    const Radius.circular(15),
+                                  ),
                                 ),
-                              ),
-                              hintStyle: TextStyle(
-                                  fontFamily: Constants.fontsFamily,
-                                  color: textColor,
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 16)),
+                                hintStyle: TextStyle(
+                                    fontFamily: Constants.fontsFamily,
+                                    color: textColor,
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 16)),
                             style: TextStyle(
                                 fontFamily: Constants.fontsFamily,
                                 color: primaryTextColor,
@@ -264,40 +262,6 @@ class _RegisterPage extends State<RegisterPage> {
                     ],
                   ),
                 ),
-                // Container(
-                //   margin: EdgeInsets.only(bottom: 10),
-                //   height: MediaQuery.of(context).size.height * 0.07,
-                //   child: TextField(
-                //     maxLines: 1,
-                //     keyboardType: TextInputType.number,
-                //     style: TextStyle(
-                //         fontFamily: Constants.fontsFamily,
-                //         color: primaryTextColor,
-                //         fontWeight: FontWeight.w400,
-                //         fontSize: 16),
-                //     obscureText: true,
-                //     decoration: InputDecoration(
-                //         contentPadding: EdgeInsets.only(top: 3, left: 8),
-                //         enabledBorder: OutlineInputBorder(
-                //           borderSide: BorderSide(color: textColor, width: 0.3),
-                //           borderRadius: const BorderRadius.all(
-                //             const Radius.circular(8),
-                //           ),
-                //         ),
-                //         focusedBorder: OutlineInputBorder(
-                //           borderSide: BorderSide(color: textColor, width: 0.3),
-                //           borderRadius: const BorderRadius.all(
-                //             const Radius.circular(15),
-                //           ),
-                //         ),
-                //         hintStyle: TextStyle(
-                //             fontFamily: Constants.fontsFamily,
-                //             color: textColor,
-                //             fontWeight: FontWeight.w400,
-                //             fontSize: 16)),
-                //   ),
-                // ),
-
                 Padding(
                   padding: EdgeInsets.only(bottom: 10),
                   child: Align(
@@ -346,7 +310,7 @@ class _RegisterPage extends State<RegisterPage> {
                       color: textColor,
                     ),
                     Padding(
-                        padding: EdgeInsets.only(left: 5,right: 5),
+                        padding: EdgeInsets.only(left: 5, right: 5),
                         child: getCustomText(
                             S.of(context).iHaveAccept,
                             textColor,
@@ -404,7 +368,8 @@ class _RegisterPage extends State<RegisterPage> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => WidgetMobileVerification(),
+                          // builder: (context) => WidgetMobileVerification(),
+                          builder: (context) => LoginPage(),
                         ));
 
                     // Navigator.push(
