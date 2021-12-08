@@ -48,48 +48,10 @@ class _IntroPage extends State<IntroPage> {
     double imageSize = SizeConfig.safeBlockVertical * 35;
     return WillPopScope(
         child: Scaffold(
-          backgroundColor: ConstantColors.bgColor,
+          // backgroundColor: ConstantColors.bgColor,
+          backgroundColor: Colors.white,
           body: Stack(
-            children: [
-              // Container(
-              //   child: PageView.builder(
-              //     controller: controller,
-              //     itemBuilder: (context, position) {
-              //       return Container(
-              //         margin: EdgeInsets.all(
-              //             MediaQuery.of(context).size.height * 0.03),
-              //         child: Column(
-              //           mainAxisAlignment: MainAxisAlignment.center,
-              //           crossAxisAlignment: CrossAxisAlignment.center,
-              //           children: [
-              //             Padding(
-              //               padding: EdgeInsets.only(bottom: 20),
-              //               child: IconButton(
-              //                 icon: new Image.asset(Constants.assetsImagePath+
-              //                     introModelList[position].image,width: imageSize,height:imageSize,fit: BoxFit.fitWidth,),
-              //                 iconSize: imageSize,
-              //                 onPressed: () {},
-              //               ),
-              //             ),
-              //             Padding(
-              //               padding: EdgeInsets.all(15),
-              //               child:
-              //               getCustomTextWithoutMax(introModelList[position].name,textColor,TextAlign.start,FontWeight.bold,25),
-              //             ),
-              //             getCustomTextWithoutMax(introModelList[position].desc,primaryTextColor,TextAlign.center,FontWeight.w500,15),
-              //
-              //             // Container(
-              //             //   margin: EdgeInsets.all(40),
-              //             //   child: getIndicator(position),
-              //             // )
-              //           ],
-              //         ),
-              //       );
-              //     },
-              //     itemCount: introModelList.length,
-              //     onPageChanged: _onPageViewChange,
-              //   ),
-              // ),
+            children: [            
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.max,
@@ -125,7 +87,7 @@ class _IntroPage extends State<IntroPage> {
                                   padding: EdgeInsets.all(15),
                                   child: getCustomTextWithoutMax(
                                       introModelList[position].name,
-                                      textColor,
+                                      primaryColor,
                                       TextAlign.start,
                                       FontWeight.bold,
                                       25),

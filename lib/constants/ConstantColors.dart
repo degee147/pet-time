@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-Color primaryColor = "#ED6D4E".toColor();
+Color primaryColor = "#29ABE2".toColor();
 // Color primaryColor = "#4751CA".toColor();
 Color textColor = "#000000".toColor();
 Color accentColors = "#ED6D4E".toColor();
@@ -25,7 +25,8 @@ Color shadowColor = Colors.transparent;
 
 // Color ConstantColors.bgColor = "#F2F6F9".toColor();
 class ConstantColors {
-  static Color bgColor = "#F2F6F9".toColor();
+  // static Color bgColor = "#F2F6F9".toColor();
+  static Color bgColor = "#FFFFFF".toColor();
   static Color profileBgColor = "#E4E6ED".toColor();
 }
 

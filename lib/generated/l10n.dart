@@ -75,10 +75,67 @@ class S {
     );
   }
 
+  String get intro1header {
+    return Intl.message(
+      'Default',
+      name: 'intro1header',
+      desc: '',
+      args: [],
+    );
+  }
+  
+  String get intro1description {
+    return Intl.message(
+      'Default',
+      name: 'intro1description',
+      desc: '',
+      args: [],
+    );
+  }
+
+
+  String get intro2header {
+    return Intl.message(
+      'Default',
+      name: 'intro2header',
+      desc: '',
+      args: [],
+    );
+  }
+  
+  String get intro2description {
+    return Intl.message(
+      'Default',
+      name: 'intro2description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  
+  String get intro3header {
+    return Intl.message(
+      'Default',
+      name: 'intro1header',
+      desc: '',
+      args: [],
+    );
+  }
+  
+  String get intro3description {
+    return Intl.message(
+      'Default',
+      name: 'intro3description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  
   /// `Find Your New Friend`
   String get findYourNewFriend {
     return Intl.message(
-      'Find Your New Friend',
+      'Find Your New Friend2',
       name: 'findYourNewFriend',
       desc: '',
       args: [],

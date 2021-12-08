@@ -679,27 +679,27 @@ class DataFile {
 
     IntroModel mainModel = new IntroModel();
     mainModel.id = 1;
-    mainModel.name = S.of(context).findYourNewFriend;
+    mainModel.name = S.of(context).intro1header;
     // mainModel.image = "gif1.gif";
-    mainModel.image = "intro1.png";
+    mainModel.image = "splash1.png";
     // mainModel.image = "office.png";
-    mainModel.desc = S.of(context).lorem_text;
+    mainModel.desc = S.of(context).intro1description;
     introList.add(mainModel);
 
     mainModel = new IntroModel();
     mainModel.id = 2;
-    mainModel.name = S.of(context).petDeservesMoreCare;
-    mainModel.image = "intro2.png";
+    mainModel.name = S.of(context).intro2header;
+    mainModel.image = "splash2.png";
     // mainModel.image = "realx.png";
-    mainModel.desc = S.of(context).lorem_text;
+    mainModel.desc = S.of(context).intro2description;
     introList.add(mainModel);
 
     mainModel = new IntroModel();
     mainModel.id = 3;
-    mainModel.name = S.of(context).allPetNeedsAreHere;
-    mainModel.image = "intro3.png";
+    mainModel.name = S.of(context).intro3header;
+    mainModel.image = "splash3.png";
     // mainModel.image = "home_furniture.png";
-    mainModel.desc = S.of(context).lorem_text;
+    mainModel.desc = S.of(context).intro3description;
     introList.add(mainModel);
 
     return introList;
