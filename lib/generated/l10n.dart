@@ -235,10 +235,10 @@ class S {
     );
   }
 
-  /// `Pets Care`
+  /// `Pet Time`
   String get app_name {
     return Intl.message(
-      'Pets Care',
+      'Pet Time',
       name: 'app_name',
       desc: '',
       args: [],

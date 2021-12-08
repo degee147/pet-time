@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
 
 
 class CustomDialogBox extends StatefulWidget {

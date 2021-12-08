@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/tab/TabProfile.dart';
-import 'package:flutter_pets_project/tab/TabHome.dart';
-import 'package:flutter_pets_project/tab/TabPets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/tab/TabProfile.dart';
+import 'package:pet_time/tab/TabHome.dart';
+import 'package:pet_time/tab/TabPets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/generated/l10n.dart';
 
 import 'screen/ShoppingPage.dart';
 
@@ -82,7 +82,8 @@ class _HomeScreen extends State<HomeScreen> {
               type: BottomNavigationBarType.fixed,
               backgroundColor: cardColor,
               // fixedColor: Colors.blue,
-              selectedItemColor: Theme.of(context).accentColor,
+              // selectedItemColor: Theme.of(context).accentColor,
+              selectedItemColor: Theme.of(context).secondaryHeaderColor,
               unselectedItemColor: Colors.grey,
               // backgroundColor: Colors.blueAccent,
               // backgroundColor: Colors.blue,

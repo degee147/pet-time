@@ -41,7 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "agencycompany" : MessageLookupByLibrary.simpleMessage("Agency/Company"),
     "allPetNeedsAreHere" : MessageLookupByLibrary.simpleMessage("All Pet Needs Are Here"),
     "allow" : MessageLookupByLibrary.simpleMessage("Allow"),
-    "app_name" : MessageLookupByLibrary.simpleMessage("Pets Care"),
+    "app_name" : MessageLookupByLibrary.simpleMessage("Pet Time"),
     "apply" : MessageLookupByLibrary.simpleMessage("Apply"),
     "applyCoupon" : MessageLookupByLibrary.simpleMessage("Apply Coupon"),
     "arrangeBasedOnTheFollowingTypes" : MessageLookupByLibrary.simpleMessage("Arrange based on the following types"),

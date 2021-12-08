@@ -1,19 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/screen/SubmitAdoptionForm.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/customwidget/StarRating.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/screen/SubmitAdoptionForm.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/customwidget/StarRating.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/generated/l10n.dart';
 
 import 'dart:math' as math;
 
-import 'package:flutter_pets_project/model/ReviewModel.dart';
-import 'package:flutter_pets_project/model/ModelAdoption.dart';
+import 'package:pet_time/model/ReviewModel.dart';
+import 'package:pet_time/model/ModelAdoption.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart'; // import this
 

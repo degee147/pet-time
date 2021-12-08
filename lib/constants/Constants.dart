@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/themes/ThemeNotifier.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/themes/ThemeNotifier.dart';
 import 'package:intl/intl.dart';
 
 class Constants {

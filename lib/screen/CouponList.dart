@@ -1,13 +1,13 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/model/ModelCoupon.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/model/ModelCoupon.dart';
 
 class CouponList extends StatefulWidget {
   @override

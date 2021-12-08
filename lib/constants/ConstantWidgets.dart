@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
 import 'package:toast/toast.dart';
 
 import 'Constants.dart';

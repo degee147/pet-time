@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/screen/ForgotPasswordPage.dart';
-import 'package:flutter_pets_project/screen/RegisterPage.dart';
-import 'package:flutter_pets_project/HomeScreen.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/screen/ForgotPasswordPage.dart';
+import 'package:pet_time/screen/RegisterPage.dart';
+import 'package:pet_time/HomeScreen.dart';
 
 class LoginPage extends StatefulWidget {
   _LoginPage createState() {

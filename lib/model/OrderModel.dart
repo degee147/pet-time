@@ -1,4 +1,4 @@
-import 'package:flutter_pets_project/model/OrderDescModel.dart';
+import 'package:pet_time/model/OrderDescModel.dart';
 
 class OrderModel{
 

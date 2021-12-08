@@ -1,15 +1,15 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/screen/LoginPage.dart';
-import 'package:flutter_pets_project/screen/TermsAndConditionPage.dart';
-import 'package:flutter_pets_project/screen/WidgetMobileVerification.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/screen/LoginPage.dart';
+import 'package:pet_time/screen/TermsAndConditionPage.dart';
+import 'package:pet_time/screen/WidgetMobileVerification.dart';
 
 class RegisterPage extends StatefulWidget {
   _RegisterPage createState() {

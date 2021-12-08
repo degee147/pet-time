@@ -1,21 +1,21 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/model/DiscModel.dart';
-import 'package:flutter_pets_project/model/SubCategoryModel.dart';
-import 'package:flutter_pets_project/model/ModelTopCategory.dart';
-import 'package:flutter_pets_project/model/ModelBlog.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/screen/BookPetHotel.dart';
-import 'package:flutter_pets_project/screen/ProductDetail.dart';
-import 'package:flutter_pets_project/screen/ShoppingPage.dart';
-import 'package:flutter_pets_project/screen/AdoptionList.dart';
-import 'package:flutter_pets_project/screen/BookPetTreatment.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/model/DiscModel.dart';
+import 'package:pet_time/model/SubCategoryModel.dart';
+import 'package:pet_time/model/ModelTopCategory.dart';
+import 'package:pet_time/model/ModelBlog.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/screen/BookPetHotel.dart';
+import 'package:pet_time/screen/ProductDetail.dart';
+import 'package:pet_time/screen/ShoppingPage.dart';
+import 'package:pet_time/screen/AdoptionList.dart';
+import 'package:pet_time/screen/BookPetTreatment.dart';
 
 class TabHome extends StatefulWidget {
   @override

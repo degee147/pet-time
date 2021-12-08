@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/model/Message.dart';
-import 'package:flutter_pets_project/model/User.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/model/Message.dart';
+import 'package:pet_time/model/User.dart';
 import 'package:intl/intl.dart';
 
 class ChatScreen extends StatefulWidget {

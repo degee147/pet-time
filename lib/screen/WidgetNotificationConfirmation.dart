@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/screen/LoginPage.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/screen/LoginPage.dart';
 import 'package:transformer_page_view/transformer_page_view.dart';
 import '../constants/ConstantColors.dart';
 import '../generated/l10n.dart';

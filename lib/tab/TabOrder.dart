@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/screen/OrderDetailPage.dart';
-import 'package:flutter_pets_project/screen/OrderDetailTreatmentPage.dart';
-import 'package:flutter_pets_project/screen/OrderDetailPetHotel.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/model/OrderModel.dart';
-import 'package:flutter_pets_project/model/OrderDescModel.dart';
-import 'package:flutter_pets_project/screen/OrderTrackMap.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/screen/OrderDetailPage.dart';
+import 'package:pet_time/screen/OrderDetailTreatmentPage.dart';
+import 'package:pet_time/screen/OrderDetailPetHotel.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/model/OrderModel.dart';
+import 'package:pet_time/model/OrderDescModel.dart';
+import 'package:pet_time/screen/OrderTrackMap.dart';
 
 import '../HomeScreen.dart';
 

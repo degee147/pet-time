@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
 
 class DottedSlider extends StatefulWidget {
   final Color color;

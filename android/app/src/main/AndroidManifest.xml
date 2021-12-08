@@ -14,7 +14,7 @@
 
     <application
         android:icon="@drawable/logo"
-        android:label="Pets Care"
+        android:label="Pet Time"
         android:requestLegacyExternalStorage="true"
         android:largeHeap="true">
 

@@ -1,19 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/screen/ConfirmationPage.dart';
-import 'package:flutter_pets_project/screen/HotelConfirmationPage.dart';
-import 'package:flutter_pets_project/screen/TreatmentConfirmationPage.dart';
-import 'package:flutter_pets_project/screen/AddNewCardPage.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/customwidget/ReviewSlider.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/model/PaymentModel.dart';
-import 'package:flutter_pets_project/model/CardModel.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/screen/ConfirmationPage.dart';
+import 'package:pet_time/screen/HotelConfirmationPage.dart';
+import 'package:pet_time/screen/TreatmentConfirmationPage.dart';
+import 'package:pet_time/screen/AddNewCardPage.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/customwidget/ReviewSlider.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/model/PaymentModel.dart';
+import 'package:pet_time/model/CardModel.dart';
 
 class PaymentPage extends StatefulWidget {
   @override

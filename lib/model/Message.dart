@@ -1,5 +1,5 @@
 
-import 'package:flutter_pets_project/model/User.dart';
+import 'package:pet_time/model/User.dart';
 
 class Message {
   final User sender;

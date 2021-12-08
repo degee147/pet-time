@@ -1,16 +1,16 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/data/PrefData.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/main.dart';
-import 'package:flutter_pets_project/model/IntroModel.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/data/PrefData.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/model/IntroModel.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../ChoosePage.dart';
 
 class IntroPage extends StatefulWidget {
   // final ValueChanged<bool> onChanged;

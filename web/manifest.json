@@ -1,6 +1,6 @@
 {
-    "name": "flutter_pets_project",
-    "short_name": "flutter_pets_project",
+    "name": "pet_time",
+    "short_name": "pet_time",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

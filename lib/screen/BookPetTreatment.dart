@@ -1,14 +1,14 @@
 import 'package:date_picker_timeline/date_picker_timeline.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
-import 'package:flutter_pets_project/constants/ConstantWidgets.dart';
-import 'package:flutter_pets_project/constants/Constants.dart';
-import 'package:flutter_pets_project/constants/SizeConfig.dart';
-import 'package:flutter_pets_project/data/DataFile.dart';
-import 'package:flutter_pets_project/generated/l10n.dart';
-import 'package:flutter_pets_project/model/ModelAdoption.dart';
-import 'package:flutter_pets_project/model/ModelTreatment.dart';
-import 'package:flutter_pets_project/screen/CheckOutPage.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantWidgets.dart';
+import 'package:pet_time/constants/Constants.dart';
+import 'package:pet_time/constants/SizeConfig.dart';
+import 'package:pet_time/data/DataFile.dart';
+import 'package:pet_time/generated/l10n.dart';
+import 'package:pet_time/model/ModelAdoption.dart';
+import 'package:pet_time/model/ModelTreatment.dart';
+import 'package:pet_time/screen/CheckOutPage.dart';
 
 class BookPetTreatment extends StatefulWidget {
   BookPetTreatment();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_pets_project/constants/ConstantColors.dart';
+import 'package:pet_time/constants/ConstantColors.dart';
 
 import 'StorageManager.dart';
 
@@ -45,8 +45,8 @@ class ThemeNotifier with ChangeNotifier {
     //   displayColor: Colors.blue,
     // ),
     // backgroundColor: const Color(0xFF212121),
-    accentColor: Colors.white,
-    accentIconTheme: IconThemeData(color: Colors.black),
+    secondaryHeaderColor: Colors.white,
+    // accentIconTheme: IconThemeData(color: Colors.black),
     dividerColor: Colors.black12,
   );
 
@@ -70,8 +70,8 @@ class ThemeNotifier with ChangeNotifier {
     // textSelectionColor: Colors.black,
     // backgroundColor: Colors.white,
     // backgroundColor: const Color(0xFFE5E5E5),
-    accentColor: Colors.black,
-    accentIconTheme: IconThemeData(color: Colors.white),
+    // accentColor: Colors.black,
+    // accentIconTheme: IconThemeData(color: Colors.white),
     dividerColor: Colors.white54,
   );
 

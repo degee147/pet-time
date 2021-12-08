@@ -1,4 +1,4 @@
-import 'package:flutter_pets_project/constants/Constants.dart';
+import 'package:pet_time/constants/Constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefData {

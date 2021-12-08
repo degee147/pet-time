@@ -1,4 +1,4 @@
-# flutter_pets_project
+# pet_time
 
 A new Flutter application.
 
