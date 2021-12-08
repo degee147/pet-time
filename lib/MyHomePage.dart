@@ -11,8 +11,6 @@ import 'package:pet_time/screen/LoginPage.dart';
 import 'package:pet_time/screen/RegisterPage.dart';
 import 'package:pet_time/HomeScreen.dart';
 
-
-
 import 'ChoosePage.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -61,28 +59,29 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
     _isSignIn = await PrefData.getIsSignIn();
     _isIntro = await PrefData.getIsIntro();
     setState(() {
-      Timer(Duration(seconds: 3), () {
-        if (_isIntro) {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => IntroPage(),
-              ));
-        } else if (_isSignIn) {
-          print("isSignIn--" + _isSignIn.toString());
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => HomeScreen(0),
-              ));
-        } else {
-          Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => ChoosePage(),
-              ));
-        }
-      });
+      if (_isIntro) {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => IntroPage(),
+            ));
+      } else if (_isSignIn) {
+        print("isSignIn--" + _isSignIn.toString());
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HomeScreen(0),
+            ));
+      } else {
+        Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ChoosePage(),
+            ));
+      }
+      // Timer(Duration(seconds: 3), () {
+
+      // });
     });
   }
 
@@ -119,8 +118,8 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
               color: Colors.transparent,
               image: DecorationImage(
                 image: ExactAssetImage(
-                    // Constants.assetsImagePath + "background.jpg"),
-                    Constants.assetsImagePath + "logo_app.jpg"),                    
+                    Constants.assetsImagePath + "background.jpg"),
+                // Constants.assetsImagePath + "logo_app.jpg"),
                 fit: BoxFit.cover,
               ),
             ),
