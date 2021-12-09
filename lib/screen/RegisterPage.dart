@@ -9,7 +9,7 @@ import 'package:pet_time/data/PrefData.dart';
 import 'package:pet_time/generated/l10n.dart';
 import 'package:pet_time/screen/LoginPage.dart';
 import 'package:pet_time/screen/TermsAndConditionPage.dart';
-import 'package:pet_time/screen/WidgetMobileVerification.dart';
+// import 'package:pet_time/screen/WidgetMobileVerification.dart';
 
 class RegisterPage extends StatefulWidget {
   _RegisterPage createState() {

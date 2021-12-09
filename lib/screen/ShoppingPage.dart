@@ -305,14 +305,6 @@ class _ShoppingPage extends State<ShoppingPage> {
                                             fontWeight: FontWeight.w600),
                                         maxLines: 1,
                                       )
-                                      // getCustomText(
-                                      //     _subCatModle.price,
-                                      //     primaryColor,
-                                      //     1,
-                                      //     TextAlign.start,
-                                      //     FontWeight.w600,
-                                      //     Constants.getPercentSize1(
-                                      //         sellingItemHeight, 3)),
                                     ],
                                   )
                                 ],

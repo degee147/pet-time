@@ -906,7 +906,7 @@ class _BookPetTreatment extends State<BookPetTreatment> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 getCustomText(
-                                    S.of(context).pickUp,
+                                    S.of(context).deworm,
                                     textColor,
                                     1,
                                     TextAlign.start,
@@ -955,7 +955,7 @@ class _BookPetTreatment extends State<BookPetTreatment> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 getCustomText(
-                                    S.of(context).storeVisit,
+                                    S.of(context).depparation,
                                     textColor,
                                     1,
                                     TextAlign.start,

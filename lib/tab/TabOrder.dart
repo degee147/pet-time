@@ -25,7 +25,8 @@ class _TabOrder extends State<TabOrder> {
     Navigator.of(context).pop();
   }
 
-  List<String> selectionList = ["Shopping", "Treatment", "Pet Hotel"];
+  // List<String> selectionList = ["Shopping", "Treatment", "Pet Hotel"];
+  List<String> selectionList = ["Shopping", "Treatment"];
   int selectedPos = 0;
   List<OrderModel> allOrderList = DataFile.getOrderList();
 

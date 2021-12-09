@@ -117,17 +117,6 @@ class _TabHome extends State<TabHome> {
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: [
-                                        // Padding(
-                                        //   padding: EdgeInsets.all(0),
-                                        //   child: getCustomText(
-                                        //       item.name,
-                                        //       textColor,
-                                        //       1,
-                                        //       TextAlign.start,
-                                        //       FontWeight.w400,
-                                        //       Constants.getPercentSize(
-                                        //           sliderHeight, 9)),
-                                        // ),
                                         getSpace(Constants.getPercentSize(
                                             sliderHeight, 3)),
                                         Padding(
@@ -169,90 +158,6 @@ class _TabHome extends State<TabHome> {
             )))
         .toList();
 
-    // final List<Widget> adoptSliders = adoptModelList
-    //     .map((item) => Container(
-    //             child: Container(
-    //           margin: EdgeInsets.all(7),
-    //           child: InkWell(
-    //             onTap: () {},
-    //             child: ClipRRect(
-    //                 borderRadius: BorderRadius.all(Radius.circular(7)),
-    //                 child: Stack(
-    //                   children: <Widget>[
-    //                     Container(
-    //                       padding: EdgeInsets.only(
-    //                           left: SizeConfig.safeBlockHorizontal * 3),
-    //                       width: MediaQuery.of(context).size.width * 1,
-    //                       decoration: BoxDecoration(
-    //                         color: whiteColor,
-    //                         borderRadius: BorderRadius.all(Radius.circular(10)),
-    //                         image: DecorationImage(
-    //                           image: ExactAssetImage(
-    //                               Constants.assetsImagePath + item.image),
-    //                           fit: BoxFit.cover,
-    //                         ),
-    //                       ),
-    //                     ),
-    //                     Container(
-    //                       // padding: EdgeInsets.symmetric(
-    //                       //     horizontal: SizeConfig.safeBlockHorizontal * 3),
-    //                       // width: SizeConfig.safeBlockHorizontal * 45,
-    //                       child: Column(
-    //                         mainAxisAlignment: MainAxisAlignment.end,
-    //                         crossAxisAlignment: CrossAxisAlignment.start,
-    //                         children: [
-    //                           Row(
-    //                             mainAxisSize: MainAxisSize.max,
-    //                             crossAxisAlignment: CrossAxisAlignment.end,
-    //                             mainAxisAlignment:
-    //                                 MainAxisAlignment.spaceBetween,
-    //                             children: [
-    //                               // Expanded(
-    //                               //   child:
-    //                               Container(
-    //                                 width: SizeConfig.safeBlockHorizontal * 45,
-    //                                 color: Colors.black54,
-    //                                 padding: EdgeInsets.only(left: 7),
-    //                                 child: getCustomText(
-    //                                     item.name,
-    //                                     Colors.white,
-    //                                     2,
-    //                                     TextAlign.start,
-    //                                     FontWeight.w700,
-    //                                     Constants.getPercentSize1(
-    //                                         SizeConfig.safeBlockHorizontal * 40,
-    //                                         10)),
-    //                               ),
-    //                               // , flex: 1,),
-    //                               Container(
-    //                                 padding: EdgeInsets.only(right: 3),
-    //                                 width: SizeConfig.safeBlockHorizontal * 25,
-    //                                 // width: SizeConfig.safeBlockHorizontal * 30,
-    //                                 child: getButtonWithColorWithSize(
-    //                                     S.of(context).adoptNow,
-    //                                     accentColors,
-    //                                     Constants.getPercentSize1(
-    //                                         slider2Height, 2),
-    //                                     Constants.getPercentSize1(
-    //                                         SizeConfig.safeBlockHorizontal * 30,
-    //                                         9),
-    //                                     // SizeConfig.safeBlockHorizontal * 30, 9),
-    //                                     () {
-    //                                   sendToAdopt();
-    //                                 }),
-    //                               ),
-    //                               // getHorizonSpace(1)
-    //                             ],
-    //                           ),
-    //                         ],
-    //                       ),
-    //                     )
-    //                   ],
-    //                 )),
-    //           ),
-    //         )))
-    //     .toList();
-
     return Scaffold(
       backgroundColor: ConstantColors.bgColor,
       body: Container(
@@ -274,7 +179,7 @@ class _TabHome extends State<TabHome> {
                       fontFamily: Constants.fontsFamily),
                   children: <TextSpan>[
                     new TextSpan(
-                        text: " Mike,",
+                        text: " User,",
                         style: TextStyle(
                             color: accentColors,
                             fontWeight: FontWeight.w600,
@@ -405,123 +310,102 @@ class _TabHome extends State<TabHome> {
                   enlargeStrategy: CenterPageEnlargeStrategy.height),
               items: imageSliders,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: padding),
-              child: getTitles(S.of(context).bestSellingItems),
-            ),
-            Container(
-              height: sellingItemHeight,
-              margin: EdgeInsets.all(
-                  Constants.getPercentSize(sellingItemHeight, 3)),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                primary: false,
-                itemCount: subList.length,
-                itemBuilder: (context, index) {
-                  SubCategoryModel _subCatModle = subList[index];
-                  return InkWell(
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => ProductDetail(_subCatModle),
-                      ));
-                    },
-                    child: Container(
-                      width: sellingItemWidth,
-                      height: double.infinity,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(7)),
-                          color: cardColor,
-                          boxShadow: [
-                            BoxShadow(color: shadowColor, blurRadius: 2)
-                          ]
-                          // border: Border.all(color: Colors.grey, width: 1),
-                          ),
-                      margin: EdgeInsets.all(
-                          Constants.getPercentSize(sellingItemHeight, 3)),
-                      padding: EdgeInsets.all(
-                          Constants.getPercentSize(sellingItemWidth, 5)),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Expanded(
-                            child: ClipRRect(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(7)),
-                              child: Image.asset(
-                                Constants.assetsImagePath +
-                                    _subCatModle.image[0],
-                                fit: BoxFit.cover,
-                                width: double.infinity,
-                                height: double.infinity,
-                              ),
-                            ),
-                            flex: 1,
-                          ),
-                          getSpace(Constants.getPercentSize1(
-                              sellingItemHeight, 2.5)),
-                          getCustomText(
-                              _subCatModle.name,
-                              textColor,
-                              1,
-                              TextAlign.start,
-                              FontWeight.w400,
-                              Constants.getPercentSize1(sellingItemHeight, 7)),
-                          Row(
-                            children: [
-                              getSpace(Constants.getPercentSize1(
-                                  sellingItemHeight, 1.2)),
-                              getCustomText(
-                                  _subCatModle.priceCurrency +
-                                      _subCatModle.price.toString(),
-                                  colorOrange,
-                                  1,
-                                  TextAlign.start,
-                                  FontWeight.w600,
-                                  Constants.getPercentSize1(
-                                      sellingItemHeight, 8)),
-                              Text(
-                                _subCatModle.priceCurrency +
-                                    (_subCatModle.price - Constants.discountVal).toString(),
-                                style: TextStyle(
-                                    color: primaryTextColor,
-                                    decoration: TextDecoration.lineThrough,
-                                    fontFamily: Constants.fontsFamily,
-                                    fontSize: Constants.getPercentSize1(
-                                        sellingItemHeight, 6),
-                                    fontWeight: FontWeight.w600),
-                                maxLines: 1,
-                              )
-                              // getCustomText(
-                              //     _subCatModle.price,
-                              //     primaryColor,
-                              //     1,
-                              //     TextAlign.start,
-                              //     FontWeight.w600,
-                              //     Constants.getPercentSize1(
-                              //         sellingItemHeight, 3)),
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-            // CarouselSlider(
-            //   options: CarouselOptions(
-            //       height: sliderHeight,
-            //       autoPlay: false,
-            //       autoPlayInterval: Duration(seconds: 5),
-            //       aspectRatio: 1.0,
-            //       enlargeCenterPage: false,
-            //       onPageChanged: (index, reason) {
-            //         setState(() {});
-            //       },
-            //       enlargeStrategy: CenterPageEnlargeStrategy.height
+            // Padding(
+            //   padding: EdgeInsets.symmetric(horizontal: padding),
+            //   child: getTitles(S.of(context).bestSellingItems),
+            // ),
+            //best selling items
+            // Container(
+            //   height: sellingItemHeight,
+            //   margin: EdgeInsets.all(
+            //       Constants.getPercentSize(sellingItemHeight, 3)),
+            //   child: ListView.builder(
+            //     scrollDirection: Axis.horizontal,
+            //     primary: false,
+            //     itemCount: subList.length,
+            //     itemBuilder: (context, index) {
+            //       SubCategoryModel _subCatModle = subList[index];
+            //       return InkWell(
+            //         onTap: () {
+            //           Navigator.of(context).push(MaterialPageRoute(
+            //             builder: (context) => ProductDetail(_subCatModle),
+            //           ));
+            //         },
+            //         child: Container(
+            //           width: sellingItemWidth,
+            //           height: double.infinity,
+            //           decoration: BoxDecoration(
+            //               borderRadius: BorderRadius.all(Radius.circular(7)),
+            //               color: cardColor,
+            //               boxShadow: [
+            //                 BoxShadow(color: shadowColor, blurRadius: 2)
+            //               ]
+            //               // border: Border.all(color: Colors.grey, width: 1),
+            //               ),
+            //           margin: EdgeInsets.all(
+            //               Constants.getPercentSize(sellingItemHeight, 3)),
+            //           padding: EdgeInsets.all(
+            //               Constants.getPercentSize(sellingItemWidth, 5)),
+            //           child: Column(
+            //             mainAxisAlignment: MainAxisAlignment.start,
+            //             crossAxisAlignment: CrossAxisAlignment.start,
+            //             children: [
+            //               Expanded(
+            //                 child: ClipRRect(
+            //                   borderRadius:
+            //                       BorderRadius.all(Radius.circular(7)),
+            //                   child: Image.asset(
+            //                     Constants.assetsImagePath +
+            //                         _subCatModle.image[0],
+            //                     fit: BoxFit.cover,
+            //                     width: double.infinity,
+            //                     height: double.infinity,
+            //                   ),
+            //                 ),
+            //                 flex: 1,
+            //               ),
+            //               getSpace(Constants.getPercentSize1(
+            //                   sellingItemHeight, 2.5)),
+            //               getCustomText(
+            //                   _subCatModle.name,
+            //                   textColor,
+            //                   1,
+            //                   TextAlign.start,
+            //                   FontWeight.w400,
+            //                   Constants.getPercentSize1(sellingItemHeight, 7)),
+            //               Row(
+            //                 children: [
+            //                   getSpace(Constants.getPercentSize1(
+            //                       sellingItemHeight, 1.2)),
+            //                   getCustomText(
+            //                       _subCatModle.priceCurrency +
+            //                           _subCatModle.price.toString(),
+            //                       colorOrange,
+            //                       1,
+            //                       TextAlign.start,
+            //                       FontWeight.w600,
+            //                       Constants.getPercentSize1(
+            //                           sellingItemHeight, 8)),
+            //                   Text(
+            //                     _subCatModle.priceCurrency +
+            //                         (_subCatModle.price - Constants.discountVal).toString(),
+            //                     style: TextStyle(
+            //                         color: primaryTextColor,
+            //                         decoration: TextDecoration.lineThrough,
+            //                         fontFamily: Constants.fontsFamily,
+            //                         fontSize: Constants.getPercentSize1(
+            //                             sellingItemHeight, 6),
+            //                         fontWeight: FontWeight.w600),
+            //                     maxLines: 1,
+            //                   )                            
+            //                 ],
+            //               )
+            //             ],
+            //           ),
+            //         ),
+            //       );
+            //     },
             //   ),
-            //   items: adoptSliders,
             // ),
             Container(
               padding: EdgeInsets.symmetric(horizontal: padding),

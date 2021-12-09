@@ -4,7 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:pet_time/constants/ConstantColors.dart';
 import 'package:pet_time/tab/TabProfile.dart';
 import 'package:pet_time/tab/TabHome.dart';
+import 'package:pet_time/tab/TabDiarioMedico.dart';
 import 'package:pet_time/tab/TabPets.dart';
+import 'package:pet_time/screen/BookPetTreatment.dart';
 import 'package:pet_time/constants/Constants.dart';
 import 'package:pet_time/generated/l10n.dart';
 
@@ -34,9 +36,11 @@ class _HomeScreen extends State<HomeScreen> {
 
   static List<Widget> _widgetOptions = <Widget>[
     TabHome(),
-    ShoppingPage(),
+    TabDiarioMedico(),
     // TabOrder(),
-    TabPets(),
+    // TabPets(),
+    BookPetTreatment(),
+    ShoppingPage(),
     TabProfile()
   ];
   List<Destination> allDestinations = [];
@@ -50,8 +54,9 @@ class _HomeScreen extends State<HomeScreen> {
   Widget build(BuildContext context) {
     allDestinations = <Destination>[
       Destination(S.of(context).home, CupertinoIcons.home),
+      Destination(S.of(context).diarioMedico, Icons.pets_rounded),
+      Destination(S.of(context).calendar, CupertinoIcons.calendar),
       Destination(S.of(context).shopping, CupertinoIcons.bag_fill),
-      Destination(S.of(context).pets, Icons.pets_rounded),
       Destination(S.of(context).profile, Icons.person),
     ];
     return WillPopScope(
@@ -61,49 +66,51 @@ class _HomeScreen extends State<HomeScreen> {
             child: _widgetOptions[this.currentIndex],
           ),
           bottomNavigationBar:
-          // Theme(
-          //   data:Theme.of(context).copyWith(
-          //     canvasColor: cardColor,
-          //     backgroundColor: Colors.red,
-          //     bottomNavigationBarTheme:BottomNavigationBarThemeData(
-          //       backgroundColor: Colors.red,
-          //       elevation: 10,
-          //       selectedLabelStyle: TextStyle(
-          //           color: Color(0xFFA67926), fontFamily: 'Montserrat', fontSize: 14.0),
-          //       unselectedLabelStyle: TextStyle(
-          //           color: Colors.grey[600], fontFamily: 'Montserrat', fontSize: 12.0),
-          //       selectedItemColor: Color(0xFFA67926),
-          //       unselectedItemColor: Colors.grey[600],
-          //       showUnselectedLabels: true,
-          //     )
-          //   ) ,
-          //   child:
-            BottomNavigationBar(
-              type: BottomNavigationBarType.fixed,
-              backgroundColor: cardColor,
-              // fixedColor: Colors.blue,
-              // selectedItemColor: Theme.of(context).accentColor,
-              selectedItemColor: Theme.of(context).secondaryHeaderColor,
-              unselectedItemColor: Colors.grey,
-              // backgroundColor: Colors.blueAccent,
-              // backgroundColor: Colors.blue,
-              currentIndex: currentIndex,
-              selectedLabelStyle: TextStyle(
-                  fontFamily: Constants.fontsFamily,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 12),
-              onTap: (int index) {
-                setState(() {
-                  currentIndex = index;
-                });
-              },
-              items: allDestinations.map((Destination destination) {
-                return BottomNavigationBarItem(
-                    icon: Icon(destination.icon),
-                    backgroundColor: Colors.white,
-                    label: destination.title);
-              }).toList(),
-            ),
+              // Theme(
+              //   data:Theme.of(context).copyWith(
+              //     canvasColor: cardColor,
+              //     backgroundColor: Colors.red,
+              //     bottomNavigationBarTheme:BottomNavigationBarThemeData(
+              //       backgroundColor: Colors.red,
+              //       elevation: 10,
+              //       selectedLabelStyle: TextStyle(
+              //           color: Color(0xFFA67926), fontFamily: 'Montserrat', fontSize: 14.0),
+              //       unselectedLabelStyle: TextStyle(
+              //           color: Colors.grey[600], fontFamily: 'Montserrat', fontSize: 12.0),
+              //       selectedItemColor: Color(0xFFA67926),
+              //       unselectedItemColor: Colors.grey[600],
+              //       showUnselectedLabels: true,
+              //     )
+              //   ) ,
+              //   child:
+              BottomNavigationBar(
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: cardColor,
+            // fixedColor: Colors.blue,
+            // selectedItemColor: Theme.of(context).accentColor,
+            selectedItemColor: Theme.of(context).secondaryHeaderColor,
+            unselectedItemColor: Colors.grey,
+            // backgroundColor: Colors.blueAccent,
+            // backgroundColor: Colors.blue,
+            currentIndex: currentIndex,
+            selectedLabelStyle: TextStyle(
+                fontFamily: Constants.fontsFamily,
+                fontWeight: FontWeight.w600,
+                fontSize: 12),
+            onTap: (int index) {
+              setState(() {
+                currentIndex = index;
+              });
+            },
+            items: allDestinations.map((Destination destination) {
+              return BottomNavigationBarItem(
+                  icon: Icon(destination.icon),
+                  backgroundColor: Colors.white,
+                  // label: destination.title
+                  label: ''
+                  );
+            }).toList(),
+          ),
           // ),
         ),
         onWillPop: () async {

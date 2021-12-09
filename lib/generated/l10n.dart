@@ -393,6 +393,15 @@ class S {
   }
 
   /// `Pets`
+  String get diarioMedico {
+    return Intl.message(
+      'Diario Medico',
+      name: 'diarioMedico',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Pets`
   String get pets {
     return Intl.message(
       'Pets',
@@ -422,6 +431,15 @@ class S {
     );
   }
 
+  /// `Shopping`
+  String get calendar {
+    return Intl.message(
+      'Calendar',
+      name: 'Calendar',
+      desc: '',
+      args: [],
+    );
+  }
   /// `Shopping`
   String get shopping {
     return Intl.message(
@@ -893,6 +911,15 @@ class S {
   }
 
   /// `Store Visit`
+  String get depparation {
+    return Intl.message(
+      'Depparation',
+      name: 'depparation',
+      desc: '',
+      args: [],
+    );
+  }
+  /// `Store Visit`
   String get storeVisit {
     return Intl.message(
       'Store Visit',
@@ -902,6 +929,15 @@ class S {
     );
   }
 
+  /// `Pick Up`
+  String get deworm {
+    return Intl.message(
+      'Deworm',
+      name: 'deworm',
+      desc: '',
+      args: [],
+    );
+  }
   /// `Pick Up`
   String get pickUp {
     return Intl.message(
