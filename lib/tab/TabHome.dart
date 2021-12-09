@@ -231,15 +231,7 @@ class _TabHome extends State<TabHome> {
 
                               break;
                             case 2:
-                              PrefData().setSelectedMainCategory(
-                                  Constants.PET_HOTEL_ID);
-                              Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => BookPetHotel(),
-                              ));
-                              break;
-                            case 3:
                               sendToAdopt();
-
                               break;
                           }
                         },
@@ -421,39 +413,324 @@ class _TabHome extends State<TabHome> {
               physics: ScrollPhysics(),
               shrinkWrap: true,
               padding: const EdgeInsets.all(20),
-              crossAxisSpacing: 10,
+              crossAxisSpacing: 5,
               mainAxisSpacing: 10,
-              crossAxisCount: 2,
+              crossAxisCount: 3,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text("He'd have you all unravel at the"),
-                  color: Colors.teal[100],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/diaromedico.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Diaro Medico",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Heed not the rabble'),
-                  color: Colors.teal[200],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/servipet.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Servipet",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Sound of screams but the'),
-                  color: Colors.teal[300],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/calender.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Mi Calendario",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Who scream'),
-                  color: Colors.teal[400],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/adoption.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Adoption",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution is coming...'),
-                  color: Colors.teal[500],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/tips.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Tips y cudados",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  child: const Text('Revolution, they...'),
-                  color: Colors.teal[600],
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/products.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Productos",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
+                ),
+                Container(
+                  width: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  height: topListHeight -
+                      Constants.getPercentSize1(topListHeight, 5),
+                  margin: EdgeInsets.all(
+                      Constants.getPercentSize1(topListHeight, 5)),
+                  decoration: BoxDecoration(
+                      // color: Colors.grey,
+                      // border:
+                      //     Border.all(color: Colors.grey, width: 0.8),
+                      color: cardColor,
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                      boxShadow: [
+                        BoxShadow(color: shadowColor, blurRadius: 1.2)
+                        // BoxShadow(color: "#B9B9B9".toColor(), blurRadius:1.2)
+                      ]),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: topListItemHeight * 2,
+                        width: topListItemHeight * 2,
+                        child: Image.asset(
+                          Constants.assetsImagePath +
+                              'homeicons/chat.png',
+                          width: double.infinity,
+                          height: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                        // ),
+                      ),
+                      getSpace(Constants.getPercentSize1(topListHeight, 5)),
+                      getCustomText(
+                          "Planes y eventos",
+                          textColor,
+                          1,
+                          TextAlign.start,
+                          FontWeight.w400,
+                          Constants.getPercentSize1(
+                              topListHeight - topListItemHeight, 20))
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -465,6 +742,7 @@ class _TabHome extends State<TabHome> {
 
   void sendToAdopt() {
     PrefData().setSelectedMainCategory(Constants.ADOPTION_ID);
+   
     Navigator.of(context).push(MaterialPageRoute(
       builder: (context) => AdoptionList(),
     ));
